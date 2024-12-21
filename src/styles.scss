@@ -1,1 +1,54 @@
 /* You can add global styles to this file, and also import other style files */
+:root {
+    --primary: #2D3436;
+    --secondary: #00B894;
+    --accent: #6C5CE7;
+    --background: #FFFFFF;
+    --text: #2D3436;
+  }
+  
+  /* Global Styles */
+  body {
+    font-family: 'Poppins', sans-serif;
+    color: var(--text);
+    overflow-x: hidden;
+  }
+  
+  section {
+    padding: 100px 0;
+  }
+  
+  /* Navigation */
+  .navbar {
+    transition: all 0.3s ease;
+    background: transparent;
+  }
+  
+  .navbar.scrolled {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  }
+  
+  /* Hero Section */
+  .hero-section {
+    background: linear-gradient(45deg, #00B894, #6C5CE7);
+    color: white;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .social-links a {
+    color: white;
+    font-size: 24px;
+    margin-right: 20px;
+    transition: all 0.3s ease;
+  }
+  
+  .social-links a:hover {
+    transform: translateY(-5px);
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
